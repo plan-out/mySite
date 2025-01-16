@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  font-family: "토스폰트";
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -27,6 +32,37 @@ main {
   overflow: hidden;
 }
 
+main .arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+main .arrow i {
+  font-size: 40px;
+  cursor: pointer;
+}
+main .arrow .hidden {
+  display: none;
+}
+
+@keyframes move {
+  to {
+    bottom: 24px;
+  }
+}
+.mouse {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation: move 0.3s alternate infinite;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 34;
+}
+
 .container .area {
   width: 100%;
   height: 100vh;
@@ -42,4 +78,24 @@ main {
 }
 .container #contact {
   background: #cff;
+}
+
+main .pager {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+main .pager span {
+  display: block;
+  margin: 8px 0;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+main .pager span.active {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

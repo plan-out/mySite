@@ -16,4 +16,14 @@ const main_swiper = new Swiper("main",{
 		swiper:gnb_swiper,
 		slideThumbActiveClass:"active",
 	},
+	pagination:{
+		el:".pager",
+		bulletActiveClass:'active',
+		clickable:true,
+	},
+	navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+		disabledClass:'hidden',
+  },
 });
