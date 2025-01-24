@@ -3,6 +3,7 @@ body{font-family:"토스폰트";}
 
 header{
 	position:fixed; width:100%; z-index:999; 
+	backdrop-filter:blur(4px); box-shadow:0 1px 1px #00000033;
 	#title{float:left; margin:20px 40px;}
 	#gnb{
 		float:right; margin:20px 40px;
@@ -50,5 +51,3 @@ main .pager{
 		cursor:pointer;}
 	span.active{opacity:1;}	
 }
-
-
