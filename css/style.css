@@ -62,10 +62,6 @@ main .arrow .hidden {
   animation: move 0.3s alternate infinite;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 34;
-}
-
 .container .area {
   width: 100%;
   height: 100vh;
@@ -101,4 +97,137 @@ main .pager span {
 }
 main .pager span.active {
   opacity: 1;
+}
+
+#about .inner {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+}
+#about .box {
+  width: 100%;
+  height: 100%;
+}
+#about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#works .inner {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+}
+#works .list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+#works .item {
+  width: calc((100% - 80px) / 3);
+}
+#works .box {
+  background: #fff;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#works .img img {
+  width: 100%;
+}
+#works h3 {
+  font-size: 24px;
+  padding-left: 40px;
+}
+#works .desc {
+  font-size: 20px;
+  padding-left: 40px;
+  margin: 20px 0 40px;
+}
+#works .link {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+#works .link a {
+  display: block;
+  border-radius: 20px;
+  background: #111;
+  padding: 16px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+#works .link li.git a {
+  padding: 8px 8px;
+}
+#works .type2 .img {
+  float: left;
+  width: 70%;
+}
+#works .type2 h3 {
+  clear: both;
+}
+#works .type2 .link {
+  width: 28%;
+  float: right;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  padding-top: 10px;
+  clear: both;
+  margin-right: 5%;
+  margin-top: -200px;
+}
+#works .type2 .link li {
+  margin-bottom: 10px;
+}
+#works .type2 .link a {
+  text-align: center;
+  height: auto;
+  line-height: 1.4;
+  padding: 20px;
+}
+#works .type2 .link i {
+  font-size: 40px;
+}
+
+#EMW_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7333333333);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#EMW_modal.active {
+  display: flex;
+}
+#EMW_modal .modal_inner {
+  width: 80%;
+  height: 84%;
+  background: #fff;
+  border: 10px solid #fff;
+  border-radius: 12px;
+}
+#EMW_modal .close_modal {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+#EMW_modal iframe {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
